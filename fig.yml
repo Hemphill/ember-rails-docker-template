@@ -21,7 +21,7 @@ mysqlsvr:
 
 railssvr:
   build: .
-  command: bundle exec rackup -p 3000
+  command: bundle exec thin -p 3000
   volumes:
     - rails:/myapp
   ports:
