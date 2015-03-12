@@ -2,7 +2,7 @@ embersvr: &defaults
   image: danlynn/ember-cli:0.1.15
   volumes:
     - ember:/myapp
-  command: server --watcher polling
+  command: server --watcher=node
   ports:
     - "4200:4200"
     - "35729:35729"
